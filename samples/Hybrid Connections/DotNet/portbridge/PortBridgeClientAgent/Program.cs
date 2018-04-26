@@ -127,6 +127,8 @@ namespace PortBridgeClientAgent
                         firewallRules));
             }
 
+            PortBridgeProxyUtility.EnableProxy();
+
             if (!runOnConsole)
             {
                 ServiceController sc = new ServiceController("PortBridgeAgentService");
